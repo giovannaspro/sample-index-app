@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body
+            {
+            background-color: rgb(255, 255, 255);
+            }
+            .bluetext
+            {
+                text-align: center;
+                color: rgb(44,153,181);
+            }
+            .blueletters
+            {
+                color: rgb(44,153,181);
+            }
+            .pinktext
+            {
+                text-align: center;
+                color: rgb(181, 44, 46);
+            }
+            .image
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width:50%;
+            }
+            .blacktext
+            {
+                text-align: center;
+                color: rgb(84, 84, 84);
+            }
+            .arrow
+            {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            .right
+            {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            .left
+            {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+        </style>
+        <title>Dor's Coding School</title>
+        <script>
+            function blinkr()
+            {
+                let arrowr = document.querySelector('#arrowright');
+                if (arrowr.style.visibility === 'hidden')
+                {
+                    arrowr.style.visibility = 'visible';
+                }
+                else
+                {
+                    arrowr.style.visibility = 'hidden';
+                }
+            }
+            function blinkl()
+            {
+                let arrowl = document.querySelector('#arrowleft');
+                if (arrowl.style.visibility === 'hidden')
+                {
+                    arrowl.style.visibility = 'visible';
+                }
+                else
+                {
+                    arrowl.style.visibility = 'hidden';
+                }
+            }
+            window.setInterval(blinkr,600);
+            window.setInterval(blinkl,600);
+        </script>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+       <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">CS50</a></li>
+            <li class="breadcrumb-item"><a href="cs50web.html">CS50 Web</a></li>
+            <li class="breadcrumb-item active" aria-current="page">CS50 AI</li>
+          </ol>
+        </nav>
+        <img src="sitehtlm.png" alt="Dor's Coding School Logo" class="image">
+        <h1 class="bluetext"><b>Syllabus - CS50 AI</b></h1>
+        <p class="pinktext">Check out our <strong>channel</strong>.</p>
+        <div class="text-center">
+            <i class="arrow right" id="arrowright"></i>
+            <button type="button" class="btn btn-outline-info"><a href="https://www.youtube.com/user/1rodrigomlp">Dor's Coding School</a></button>
+            <i class="arrow left" id="arrowleft"></i>
+        </div>
+
+        <p><br></p>
+
+        <div class="container">
+          <div class="jumbotron">
+            <h1 class="blueletters">Description of the course</h1>
+            <p>AI is transforming how we live, work, and play. By enabling new technologies like self-driving cars and recommendation systems or improving old ones like medical diagnostics and search engines, the demand for expertise in AI and machine learning is growing rapidly. This course will enable you to take the first step toward solving important real-world problems and future-proofing your career.<br>CS50’s Introduction to Artificial Intelligence with Python explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, reinforcement learning, and other topics in artificial intelligence and machine learning as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own.</p>
+          </div>
+        </div>
+
+        <h2 class="pinktext"><br><b>Syllabus</b></h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col">Description</th>
+              <th scope="col">Video Solution</th>
+              <th scope="col">GitHub Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://youtu.be/WbzNRTTrX0g">Search</a></td>
+              <td>Finding a solution to a problem, like a navigator app that finds the best route from your origin to the destination, or like playing a game and figuring out the next move.</td>
+              <td>
+                  <a href="">Degrees</a><br>
+                  <a href="">Tic-Tac-Toe</a>
+              </td>
+              <td>
+                  <a href="">Degrees</a><br>
+                  <a href="">Tic-Tac-Toe</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/HWQLez87vqM">Knowledge</a></td>
+              <td>Representing information and drawing inferences from it.</td>
+              <td>
+                  <a href="">Knights</a><br>
+                  <a href="">Minesweeper</a>
+              </td>
+              <td>
+                  <a href="">Knights</a><br>
+                  <a href="">Minesweeper</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/D8RRq3TbtHU">Uncertainty</a></td>
+              <td>Dealing with uncertain events using probability.</td>
+              <td>
+                  <a href="">PageRank</a><br>
+                  <a href="">Heredity</a>
+              </td>
+              <td>
+                  <a href="">PageRank</a><br>
+                  <a href="">Heredity</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/qK46ET1xk2A">Optimization</a></td>
+              <td>Finding not only a correct way to solve a problem, but a better—or the best—way to solve it.</td>
+              <td>
+                  <a href="">Crossword</a>
+              </td>
+              <td>
+                  <a href="">Crossword</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/-g0iJjnO2_w">Learning</a></td>
+              <td>Improving performance based on access to data and experience. For example, your email is able to distinguish spam from non-spam mail based on past experience.</td>
+              <td>
+                  <a href="">Shopping</a><br>
+                  <a href="">Nim</a>
+              </td>
+              <td>
+                  <a href="">Shopping</a><br>
+                  <a href="">Nim</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/J1QD9hLDEDY">Neural Network</a></td>
+              <td>A program structure inspired by the human brain that is able to perform tasks effectively.</td>
+              <td>
+                  <a href="">Trafic</a>
+              </td>
+              <td>
+                  <a href="">Trafic</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://youtu.be/55tRetTTrdQ">Language</a></td>
+              <td>Processing natural language, which is produced and understood by humans.</td>
+              <td>
+                  <a href="">Parser</a><br>
+                  <a href="">Questions</a>
+              </td>
+              <td>
+                  <a href="">Parser</a><br>
+                  <a href="">Questions</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </body>
+</html>
